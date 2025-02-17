@@ -2,13 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://armstronglife.com/">
-    <title>ARMSTRONG</title>
+    <title>Directory Listing</title>
     <script>
-        window.location.href = "https://armstronglife.com/";
+        document.addEventListener("DOMContentLoaded", function() {
+            var fileList = [
+                "hello.pdf",
+                "document.docx",
+                "image.png"
+            ];
+
+            var listContainer = document.getElementById("file-list");
+            fileList.forEach(function(file) {
+                var listItem = document.createElement("li");
+                var link = document.createElement("a");
+                link.href = file;
+                link.textContent = file;
+                listItem.appendChild(link);
+                listContainer.appendChild(listItem);
+            });
+        });
     </script>
 </head>
 <body>
-  
+    <h1>Available Files</h1>
+    <ul id="file-list"></ul>
 </body>
 </html>
