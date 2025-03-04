@@ -1,0 +1,20 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      @font-face {
+        font-family: 'Domine';
+        src: url('https://cdn.armfs.com/fonts/Domine-Bold.ttf') format('truetype');
+      }
+      text {
+        font-family: 'Domine', sans-serif;
+        font-weight: bold;
+        font-size: 72px;
+        fill: #000000;
+      }
+    </style>
+  </defs>
+  
+  <text x="111.57602" y="248">Armstrong</text>
+  <text x="109.94702" y="310.66666">Financial</text>
+  <text x="109.94702" y="371.33333">Services.</text>
+</svg>
