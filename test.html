@@ -52,14 +52,17 @@
         }
 
         /* Popup box */
-        .popup {
-            background: rgba(255,255,255,0.9);
-            padding: 2rem;
-            border-radius: 12px;
-            max-width: 600px;
-            text-align: center;
-            box-shadow: 0 6px 24px rgba(0,0,0,.3);
-        }
+.popup {
+  background: rgba(255,255,255,0.8); /* was 0.9 */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: min(92%, 600px);
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0,0,0,.3);
+  outline: none;
+}
+
 
         .popup h1 {
             margin-top: 0;
