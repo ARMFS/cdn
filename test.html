@@ -51,50 +51,57 @@
             z-index: 999;
         }
 
-  /* Popup box */
-.popup {
-  background: rgba(255,255,255,0.87); /* slightly less opaque than 0.9 */
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 600px;
-  width: min(92%, 600px);
-  text-align: center;
-  box-shadow: 0 6px 24px rgba(0,0,0,.3);
-  outline: none;
-}
+        /* Popup box */
+        .popup {
+            background: rgba(255,255,255,0.87);
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 600px;
+            width: min(92%, 600px);
+            text-align: center;
+            box-shadow: 0 6px 24px rgba(0,0,0,.3);
+            outline: none;
+        }
 
-
-
-        .popup h1 {
-            margin-top: 0;
-            font-size: 2rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+        .popup img {
+            width: 50px;   /* smaller candles */
+            margin-bottom: 1rem;
         }
 
         .popup p {
             font-size: 1.3rem;
             line-height: 1.6;
             font-weight: 400;
+            margin: 0;
         }
 
         .close-btn {
             margin-top: 1.5rem;
-            padding: 0.6rem 1.2rem;
-            background: #333;
-            color: #fff;
+            padding: 0.7rem 1.5rem;
+            background: linear-gradient(135deg, #d4af37, #f9e79f);
+            color: #000;
             border: none;
             border-radius: 6px;
             cursor: pointer;
             font-size: 1.1rem;
+            font-weight: 600;
             font-family: 'Cormorant Garamond', serif;
+            box-shadow: 0 4px 10px rgba(0,0,0,.25);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .close-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 14px rgba(0,0,0,.3);
         }
     </style>
 </head>
 <body>
     <!-- Popup -->
     <div class="overlay" id="popupOverlay">
-        <div class="popup"><img src="/candles.png" alt="Shabbat" /><br/>
+        <div class="popup">
+            <img src="/candles.png" alt="Shabbat Candles" />
+            <p>
                 Out of respect for the holiness of Shabbat and this mitzvah, we kindly ask that no one drive to the event on Shabbat.  
                 Guests who cannot walk on Shabbat are invited to join us for the Havdallah ceremony and  
                 Melaveh Malka celebration at <strong>9:00 PM</strong>.
